@@ -1,0 +1,359 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*              Navbar                          */
+.navbar {
+    background-color: #100f2e;
+    z-index: 100;
+}
+
+.navbar h2 {
+    padding: 10px;
+    text-shadow: 6.2px 11px 6.1px #ffc825;
+    box-shadow: #ffc825;
+    margin-left: 200px;
+    margin-right: 150px;
+    color: #ffc825;
+}
+
+.icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.font-size {
+    font-size: 13px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.font-size li {
+    padding-right: 30px;
+}
+
+.nav-link:hover,
+#socialMedia li a i:hover,
+.navbar img:hover {
+    transform: scale(1.4);
+    transition: all .5s ease-in-out;
+    color: #ffc720 !important;
+}
+
+@media screen and (min-width: 772px) {
+    #logoImage {
+        margin-right: 500px;
+    }
+}
+
+/*              Navbar                          */
+
+/*              Home                          */
+
+.home {
+    background-color: #0a0919;
+    overflow: hidden;
+    padding-top: 125px;
+}
+
+#socialMedia li {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.name {
+    font-family: "a bug's life - debugged";
+    font-size: 26px;
+    color: lightsalmon;
+
+}
+
+.home .row {
+    padding-bottom: 40px;
+    align-items: center;
+}
+
+.home img {
+    border-radius: 50%;
+    transition: 0.6s;
+    box-shadow: 0px 0px 40px #ffc825;
+}
+
+.home img:hover {
+    border-radius: 0px;
+    height: 80%;
+}
+
+
+/*              Home                          */
+
+/*              About me                          */
+
+.about-me {
+    width: 100%;
+    background-color: #100f2e;
+    overflow: hidden;
+}
+
+.about-me .row {
+    align-items: center;
+}
+
+/* .about-me .row .text-light
+{
+    width: 500px;
+} */
+
+.about-me ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.about-me article:nth-of-type(2) ul li {
+    margin-bottom: 20px;
+}
+
+.about-me article:nth-of-type(2) ul li i {
+    margin-right: 20px;
+}
+
+.about-me article:last-of-type ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.about-me article:last-of-type ul li i {
+    margin-right: 5px;
+}
+
+.about-me .row .image {
+    box-shadow: -150px -150px 0px -140px #ffc720;
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 715px) {
+    #Interest {
+        display: flex;
+        align-items: flex-start;
+        flex-flow: column nowrap;
+    }
+}
+
+/*              About me                          */
+/* Qualifications */
+
+.Qualifications {
+    background-color: #131433;
+    color: #fff;
+}
+
+.Qualifications .Borderrrrr {
+    border-left: 1px solid #ffc720;
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.Qualifications .fa-circle-dot {
+    margin-left: -7px;
+}
+
+.Qualifications .Borderrrrr:hover {
+    transform: scale(1.01);
+    border: 1px solid #ffc720;
+    transition: all .5s ease-in-out;
+    border-radius: 30px;
+}
+
+
+.my-skills {
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.my-skills .progress-bar {
+    background-color: darkgoldenrod;
+}
+
+.projects .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 60px;
+    padding: 40px;
+}
+
+.projects .container .project-one {
+    background-color: #7115a136;
+    padding: 40px 0px 20px 30px;
+    border-radius: 35px;
+    position: relative;
+}
+
+.projects .container .project-one::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    top: 0;
+    height: 100%;
+    background-image: linear-gradient(to left, #ff5722, #13140712);
+    left: -25px;
+}
+
+@media(max-width:767px) {
+    .projects .container .project-one::before {
+        display: none;
+    }
+
+    .projects .container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 40px;
+        padding: 0;
+    }
+
+    .projects .container .project-one {
+        padding: 20px;
+    }
+
+    .projects .container .project-one h4 {
+        font-size: 25px;
+    }
+
+    .projects .container .project-one p {
+        font-size: 15px;
+    }
+
+    .projects .container .project-one img {
+        width: 100%;
+    }
+
+    .Contact-Me ul {
+        padding: 0px;
+    }
+
+    .navbar h2 {
+        margin: 0;
+    }
+}
+
+.projects .container h4 {
+    color: #e3e321;
+    margin-top: 20px;
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.projects .container p {
+    font-size: 25px;
+}
+
+.projects .container a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.projects .container .link {
+    width: fit-content;
+    background-color: black;
+    padding: 0px 20px;
+    border-radius: 5px;
+    margin: 0px auto;
+    transition: 0.3s;
+    box-shadow: 0px 0px 15px #66eb0d;
+
+}
+
+/* Qualifications */
+
+/* Portfolio */
+
+.Portfolio {
+    background-color: #100f2e;
+    color: #fff;
+    text-align: center;
+}
+
+.Portfolio ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Portfolio ul li {
+    margin-right: 50px;
+    line-height: 4;
+}
+
+.Portfolio ul li:hover {
+    color: #ffc720;
+    transition: all .5s ease-in-out;
+}
+
+.Portfolio .row img {
+    width: 75%;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.Portfolio .row img:hover {
+    border: 2px solid #ffc720;
+    transition: all .5s ease-in-out;
+    transform: scale(1.1);
+}
+
+/* .bigInfo
+{
+} */
+/* Portfolio */
+/* Contact Me */
+
+.Contact-Me {
+    background-color: #131433;
+    color: #fff;
+    text-align: center;
+}
+
+.Contact-Me .form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.Contact-Me .form input,
+.Contact-Me .form textarea {
+    margin: 15px 0;
+    background-color: #0a0919;
+    color: #fff;
+}
+
+.Contact-Me ul {
+    margin-top: 100px;
+}
+
+.Contact-Me .info li {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: initial;
+    text-align: left;
+}
+
+.Contact-Me .info li article {
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+/* Contact Me */
